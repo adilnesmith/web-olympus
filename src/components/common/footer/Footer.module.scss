@@ -1,0 +1,55 @@
+@import "styles/variables.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+
+  &__columns {
+    border: 1px solid #000;
+    display: flex;
+
+    &__first {
+      flex: 40%;
+      border: 1px solid #000;
+    }
+
+    &__second {
+      flex: 20%;
+      border: 1px solid #000;
+    }
+
+    &__third {
+      flex: 20%;
+      border: 1px solid #000;
+    }
+
+    &__fourth {
+      flex: 20%;
+      border: 1px solid #000;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    &__columns {
+      flex-direction: column;
+
+      &__first {
+        flex: 100%;
+      }
+
+      &__second {
+        flex: 100%;
+      }
+
+      &__third {
+        flex: 100%;
+      }
+    }
+  }
+}
