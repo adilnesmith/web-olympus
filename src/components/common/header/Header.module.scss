@@ -3,25 +3,47 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
+  background-color: black;
+  height: 120px;
+  align-items: center;
 
   &__columns {
     display: flex;
+    flex: 1;
+    align-items: center;
 
     &__logo {
       border: 1px solid #000;
-      flex: 10%;
+      padding-left: 50px;
     }
 
     &__navigation {
       border: 1px solid #000;
-      flex: 80%;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+
+        li {
+          margin-right: 20px;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
     }
 
     &__search {
       border: 1px solid #000;
-      flex: 10%;
     }
   }
 }
@@ -32,16 +54,30 @@
       flex-direction: column;
 
       &__logo {
-        flex: 100%;
+        padding-left: 0;
       }
 
       &__navigation {
-        flex: 100%;
+        align-items: center;
+
+        ul {
+          margin-top: 10px;
+        }
       }
 
       &__search {
-        flex: 100%;
+        margin-top: 10px;
       }
     }
   }
+}
+
+button {
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin-right: 50px;
+  height: 45px;
 }

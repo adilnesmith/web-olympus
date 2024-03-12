@@ -9,7 +9,6 @@ const Header: FC<HeaderProps> = ({ }) => {
     <header className={styles.wrapper}>
       <div className={styles.wrapper__columns__logo}>
         <Logo />
-        <img src="" alt={LOGO_ALT_TEXT} />
       </div>
       <nav data-testid="navigation" className={styles.wrapper__columns__navigation}>
         <ul>
