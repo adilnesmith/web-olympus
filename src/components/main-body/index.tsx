@@ -7,10 +7,16 @@ import Image from 'assets/contact_form_img.png'
 const MainBody: FC = () => {
     return (
         <section className={styles.wrapper}>
-            <h2>{HEADING}</h2>
-            <p>{DESCRIPTION}</p>
-            <Contact />
-            {/* <img src={Image} /> */}
+            <div className={styles.content}>
+                <div>
+                    <h2>{HEADING}</h2>
+                    <p>{DESCRIPTION}</p>
+                    <Contact />
+                </div>
+            </div>
+            <div>
+                <img src={Image} />
+            </div>
         </section>
     );
 };

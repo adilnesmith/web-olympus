@@ -1,3 +1,51 @@
-.wrapper {
-  border: 1px solid #000;
+form {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+
+  input {
+    color: #fff;
+    margin: 15px 0;
+    border: 0;
+    border: 1px solid #fff;
+    width: 94%;
+    background-color: black;
+    padding: 10px 15px;
+
+  }
+
+  textarea {
+    color: #fff;
+    border: 0;
+    width: 99%;
+    height: 150px;
+    margin: 15px 0;
+
+    border: 1px solid #fff;
+    background-color: black;
+
+  }
+
+  select {
+    color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 0;
+    margin: 15px 0;
+    border: 1px solid #fff;
+    background-color: black;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  div {
+    label {
+      text-transform: capitalize;
+    }
+  }
+
 }
