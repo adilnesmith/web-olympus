@@ -5,10 +5,10 @@ import MainBody from 'components/main-body';
 function App() {
   return (
     <>
-     <Header/>
-     <MainBody/>
-    <Footer/>
-    </> 
+      <Header />
+      {/* <MainBody/> */}
+      <Footer />
+    </>
   );
 }
 export default App;

@@ -4,32 +4,63 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   width: 100%;
-  text-align: center;
+  background-color: #000;
+  padding: 50px 0;
 
   &__columns {
     border: 1px solid #000;
     display: flex;
 
     &__first {
+      padding-left: 120px;
       flex: 40%;
       border: 1px solid #000;
+      display: flex;
+      flex-direction: column;
     }
 
-    &__second {
-      flex: 20%;
-      border: 1px solid #000;
-    }
-
-    &__third {
-      flex: 20%;
-      border: 1px solid #000;
-    }
-
+    &__second,
+    &__third,
     &__fourth {
       flex: 20%;
       border: 1px solid #000;
+    }
+  }
+
+
+
+  .socialIcons {
+    display: flex;
+
+    a {
+      margin: 0 5px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  label {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    font-size: 14px;
+    list-style: none;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 0;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }
@@ -39,14 +70,8 @@
     &__columns {
       flex-direction: column;
 
-      &__first {
-        flex: 100%;
-      }
-
-      &__second {
-        flex: 100%;
-      }
-
+      &__first,
+      &__second,
       &__third {
         flex: 100%;
       }

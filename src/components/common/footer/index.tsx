@@ -14,12 +14,16 @@ const Footer: FC<FooterProps> = () => {
     <>
       <footer className={styles.wrapper}>
         <div data-testid="column-1" className={styles.wrapper__columns__first}>
-          <Logo />
-          <a href={COLUMN_1?.social_links[0]?.link}><XIcon /></a>
-          <a href={COLUMN_1?.social_links[1]?.link}><InstagramIcon /></a>
-          <a href={COLUMN_1?.social_links[2]?.link}><LinkedInIcon /></a>
-          <a href={COLUMN_1?.social_links[3]?.link}><BehanceIcon /></a>
-          <a href={COLUMN_1?.social_links[4]?.link}><DribbbleIcon /></a>
+          <div className={styles.logoContainer}>
+            <Logo />
+          </div>
+          <div className={styles.socialIcons}>
+            <a href={COLUMN_1?.social_links[0]?.link}><XIcon /></a>
+            <a href={COLUMN_1?.social_links[1]?.link}><InstagramIcon /></a>
+            <a href={COLUMN_1?.social_links[2]?.link}><LinkedInIcon /></a>
+            <a href={COLUMN_1?.social_links[3]?.link}><BehanceIcon /></a>
+            <a href={COLUMN_1?.social_links[4]?.link}><DribbbleIcon /></a>
+          </div>
         </div>
         <div data-testid="column-2" className={styles.wrapper__columns__second}>
 
@@ -39,8 +43,7 @@ const Footer: FC<FooterProps> = () => {
             ))}
           </ul>
         </div>
-        <div data-testid="column-4" className={styles.wrapper__columns__third}>
-
+        <div data-testid="column-4" className={styles.wrapper__columns__fourth}>
           <label>{COLUMN_4.head}</label>
           <ul>
             {COLUMN_4?.pages?.map((page, index) => (

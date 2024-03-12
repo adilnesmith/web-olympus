@@ -10,7 +10,7 @@ const MainBody: FC = () => {
             <h2>{HEADING}</h2>
             <p>{DESCRIPTION}</p>
             <Contact />
-            <img src={Image} />
+            {/* <img src={Image} /> */}
         </section>
     );
 };
